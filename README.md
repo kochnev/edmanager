@@ -21,7 +21,7 @@ You have to have Docker on your computer to build image and run a container.
 ## Installing
 
 * `docker build -t edmanager .`
-* `docker run -it --name edmanager_container -p 8000:80 edmanager`
+* `docker run -it --name edmanager_container -v ~/PycharmProjects/edmanager:/edmanager  -p 8000:80 edmanager`
 * `git clone https://github.com/kochnev/edmanager.git` 
 * `cd edmanager`
 * `make prod`
