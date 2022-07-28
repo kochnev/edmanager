@@ -5,3 +5,11 @@ prod:
 	#django
 	pip install Django==4.0.6
 
+	#uwsgi
+	pip install uwsgi
+	uwsgi --ini uwsgi/uwsgi.ini
+
+	#nginx
+	sudo apt install -y nginx
+	cp /edmanager/nginx/nginx_edmanager.conf /etc/nginx/conf.d/
+	nginx
