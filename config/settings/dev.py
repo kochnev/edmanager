@@ -1,9 +1,9 @@
 from .base import *
 
 DEBUG = True
-SECRET_KEY = 'django-insecure-xa-nc43)_1pp#fe8kboo0=6wa3o6b)ed(@&9sj_^1%aw#%gs*9'
+
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = get_env_variable('SECRET_KEY')
+SECRET_KEY = get_env_variable('SECRET_KEY')
 
 # DATABASES = {
 #     'default': {
