@@ -1,4 +1,3 @@
-
 create user :db_user with password ':db_password';
 alter user :db_user createdb;
 alter user :db_user set client_encoding to 'utf8';
